@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{E3EB310E-CFCB-4BC7-ADDB-071D6A35553C}</ProjectGuid>
+    <ProjectGuid>{e3eb310e-cfcb-4bc7-addb-071d6a35553c}</ProjectGuid>
     <RootNamespace>main</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\Luma\Desktop\Code\2048\mainSDL\SDL2-2.28.4\include;C:\Users\Luma\Desktop\Code\2048\mainSDL;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Luma\Desktop\Code\2048\mainSDL\SDL2-2.28.4\lib\x64;C:\Users\Luma\Desktop\Code\2048\mainSDL;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)SDL2-2.28.4\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\enzobertrand\Desktop\Codee\main\SDL2-2.28.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -132,18 +132,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gameObject.cpp" />
-    <ClCompile Include="grid.cpp" />
-    <ClCompile Include="gridCopy.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="sdlWindow.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="gameObject.h" />
     <ClInclude Include="grid.h" />
     <ClInclude Include="gridCopy.h" />
     <ClInclude Include="SDL2-2.28.4\lib\x86\SDL_image.h" />
     <ClInclude Include="sdlWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="grid.cpp" />
+    <ClCompile Include="gridCopy.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sdlWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,16 +1,14 @@
-#define RESET   "\033[0m"
-#define BLACK   "\033[30m"
-#define WHITE   "\033[37m"
-#define GREEN   "\033[32m"
-#define BLUE    "\033[34m"
-#define MAGENTA "\033[35m"
-#define RED     "\033[31m"
+#pragma once
+#include "sdlWindow.h"
 
-class Grid
+class Grid : sdlWindow
 {
 public:
 
 	int grid[4][4];
+	bool victory = 0;
+	bool defeat = 0;
+	int again = 0;
 
 	Grid();
 
@@ -22,6 +20,4 @@ public:
 	void right(int i, int j);
 
 	void game();
-
-
 };
